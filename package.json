@@ -11,7 +11,8 @@
     "fix": "yarn format && yarn lint:fix",
     "storybook": "start-storybook -p 6006 -s ./public",
     "build-storybook": "build-storybook -s public",
-    "test": "jest"
+    "test": "jest",
+    "api-generate": "yarn ts-node ./api/genMockApiType.ts --project ./api/tsconfig.json"
   },
   "dependencies": {
     "next": "12.1.0",
